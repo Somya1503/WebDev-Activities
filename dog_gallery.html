@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+
+        }
+        h1{
+            text-align: center;
+            color: aqua;
+        }
+        .container{
+         /* height: 900px; */
+         width:1200px;
+         display: grid;
+         margin: auto;
+         background-color: rgb(163, 166, 173);
+         grid-template-columns: auto auto auto;
+         /* grid-template-rows: auto auto auto; */
+         gap:20px;
+        }
+        .box{
+            background-color: blue;
+            padding: 1px;
+            border:rgb(29, 216, 107) 2px solid;
+        }
+        img{
+            width: 100%; 
+            object-fit:contain;
+    height: auto;
+    display: block;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <h1>Dog Gallery</h1>
+    <div class="container">
+        
+        <div class="box"><img src="img1.png" alt=""></div>
+        <div class="box"><img src="img2.png" alt=""></div>
+        <div class="box"><img src="img11.png" alt=""></div>
+        <div class="box"><img src="img4.png" alt=""></div>
+        <div class="box"><img src="img5.png" alt=""></div>
+        <div class="box"><img src="img6.png" alt=""></div>
+        <div class="box"><img src="img7.png" alt=""></div>
+        <div class="box"><img src="img10.png" alt=""></div>
+        <div class="box"><img src="img9.png" alt=""></div>
+    </div>
+</body>
+</html>
