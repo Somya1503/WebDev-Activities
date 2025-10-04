@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Web Development Activities - Somya Gupta</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Caveat+Brush&display=swap" rel="stylesheet" />
+  
+  <style>
+  
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: black;
+      color: #EAF0CE;
+      font-family: "Caveat Brush", cursive;
+      font-weight: 400;
+      font-size: 110px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .container {
+      border: solid 5px #c7cedb;
+      box-shadow: 0 0 15px 10px #94849B;
+      width: 90%;
+      max-width: 1200px;
+      margin-top: 40px;
+    }
+
+    header {
+      background-color: black;
+      padding: 20px 0;
+      text-align: center;
+      border-bottom: 3px solid #c7cedb;
+    }
+
+    header h1 {
+      font-family: "Fascinate", cursive;
+      font-size: 90px;
+      background-color: #A0AAB2;
+      color: #2e3532;
+      padding: 10px;
+      user-select: none;
+    }
+
+    nav {
+      background-color: black;
+      border-bottom: 3px solid #c7cedb;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 15px 0;
+    }
+
+    nav a {
+      font-size: 32px;
+      color: #EAF0CE;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 800ms ease;
+      user-select: none;
+    }
+
+    nav a:hover, nav a.active {
+      color: #A6B1E1;
+    }
+
+    main {
+      background-color: black;
+      padding: 50px 30px;
+      border: 10px solid #7D8491;
+      width: 100%;
+    }
+
+    main h1 {
+      font-family: "Fascinate", cursive;
+      font-size: 90px;
+      color: #FAF3DD;
+      text-align: center;
+      margin-bottom: 30px;
+      user-select: none;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+      gap: 30px;
+    }
+
+    .project-card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid #EAF0CE;
+      padding: 25px;
+      border-radius: 12px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      font-size: 28px;
+      font-family: "Caveat Brush", cursive;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 5px 15px rgba(255,255,255,0.3);
+    }
+
+    .project-card h2 {
+      margin-bottom: 15px;
+      color: #FAF3DD;
+      font-size: 48px;
+      user-select: none;
+    }
+
+    .project-card p {
+      margin-bottom: 20px;
+      color: #A6B1E1;
+    }
+
+    .project-card a {
+      color: #EAF0CE;
+      font-weight: bold;
+      font-size: 28px;
+      user-select: none;
+    }
+
+    .project-card a:hover {
+      color: #A6B1E1;
+    }
+
+    footer {
+      background-color: #424B54;
+      text-align: center;
+      padding: 20px;
+      color: #FAF3DD;
+      font-size: 28px;
+      font-family: "Poppins", sans-serif;
+      width: 100%;
+      margin-top: 40px;
+      user-select: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      body {
+        font-size: 85px;
+      }
+      nav a {
+        font-size: 26px;
+      }
+      header h1 {
+        font-size: 72px;
+      }
+      main h1 {
+        font-size: 72px;
+      }
+      .project-card {
+        font-size: 22px;
+      }
+      .project-card h2 {
+        font-size: 38px;
+      }
+      .project-card a {
+        font-size: 22px;
+      }
+      footer {
+        font-size: 22px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 40px;
+      }
+      nav a {
+        font-size: 20px;
+      }
+      header h1 {
+        font-size: 40px;
+        padding: 6px;
+      }
+      main h1 {
+        font-size: 40px;
+      }
+      .project-card {
+        font-size: 18px;
+        padding: 15px;
+      }
+      .project-card h2 {
+        font-size: 28px;
+      }
+      .project-card a {
+        font-size: 20px;
+      }
+      footer {
+        font-size: 18px;
+        padding: 10px 5px;
+      }
+      .nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <header>
+      <h1>Web Development Activities</h1>
+    </header>
+    <main>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <h2>My First Webpage</h2>
+       <a href="https://github.com/Somya1503/Projects/blob/main/Game_1.py" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h2>Contact Form</h2>
+          <a href="https://github.com/Somya1503/Projects/tree/main/project_weather" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h2>Weekend Plan List</h2>
+          <a href="https://github.com/Somya1503/Portfolio-Website" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h2>Movie Collection Table</h2>
+          <a href="https://github.com/Somya1503/Projects/blob/main/Game_2.py" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h2>Semantic Web Page</h2>
+          <a href="https://github.com/Somya1503/WebDev-Activities" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h2>Shapes-Square</h2>
+          <a href="https://github.com/Somya1503/Projects/blob/main/GestureControl/gesture.py" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h2>Shapes-Rectangle</h2>
+          <a href="https://github.com/Somya1503/Projects/blob/main/GestureControl/gesture.py" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h2>Shapes-Circle</h2>
+          <a href="https://github.com/Somya1503/Projects/blob/main/GestureControl/gesture.py" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h2>Shapes-Triangle</h2>
+          <a href="https://github.com/Somya1503/Projects/blob/main/GestureControl/gesture.py" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h2>Shapes-Diamond</h2>
+          <a href="https://github.com/Somya1503/Projects/blob/main/GestureControl/gesture.py" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h2>Profile Card</h2>
+          <a href="https://github.com/Somya1503/Projects/blob/main/GestureControl/gesture.py" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h2>Dog Gallery</h2>
+          <a href="https://github.com/Somya1503/Projects/blob/main/GestureControl/gesture.py" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h2>Grid</h2>
+          <a href="https://github.com/Somya1503/Projects/blob/main/GestureControl/gesture.py" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h2>Ferris Wheel</h2>
+          <a href="https://github.com/Somya1503/Projects/blob/main/GestureControl/gesture.py" target="_blank">GitHub</a>
+        </div>
+
+        <div class="project-card">
+          <h2>Moon Orbit</h2>
+          <a href="https://github.com/Somya1503/Projects/blob/main/GestureControl/gesture.py" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Somya Gupta | Designed with ❤️</p>
+  </footer>
+
+</body>
+</html>
+
