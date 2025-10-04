@@ -1,56 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body{
-            background-color: black;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dog Gallery</title>
+  <style>
+    body {
+      background-color: black;
+      margin: 0;
+      font-family: sans-serif;
+    }
 
-        }
-        h1{
-            text-align: center;
-            color: aqua;
-        }
-        .container{
-         /* height: 900px; */
-         width:1200px;
-         display: grid;
-         margin: auto;
-         background-color: rgb(163, 166, 173);
-         grid-template-columns: auto auto auto;
-         /* grid-template-rows: auto auto auto; */
-         gap:20px;
-        }
-        .box{
-            background-color: blue;
-            padding: 1px;
-            border:rgb(29, 216, 107) 2px solid;
-        }
-        img{
-            width: 100%; 
-            object-fit:contain;
-    height: auto;
-    display: block;
-        }
-      
-    </style>
+    h1 {
+      text-align: center;
+      color: aqua;
+      padding: 20px;
+      font-size: 3rem;
+    }
+
+    .container {
+      width: 95%;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      background-color: #a3a6ad;
+      border-radius: 10px;
+    }
+
+    .box {
+      background-color: blue;
+      border: 2px solid rgb(29, 216, 107);
+      border-radius: 10px;
+      overflow: hidden;
+      height: 250px; 
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: 8px;
+    }
+
+    @media (max-width: 600px) {
+      .box {
+        height: 180px;
+      }
+    }
+  </style>
 </head>
-
 <body>
-    <h1>Dog Gallery</h1>
-    <div class="container">
-        
-        <div class="box"><img src="img1.png" alt=""></div>
-        <div class="box"><img src="img2.png" alt=""></div>
-        <div class="box"><img src="img11.png" alt=""></div>
-        <div class="box"><img src="img4.png" alt=""></div>
-        <div class="box"><img src="img5.png" alt=""></div>
-        <div class="box"><img src="img6.png" alt=""></div>
-        <div class="box"><img src="img7.png" alt=""></div>
-        <div class="box"><img src="img10.png" alt=""></div>
-        <div class="box"><img src="img9.png" alt=""></div>
-    </div>
+
+  <h1>Dog Gallery</h1>
+  
+  <div class="container">
+    <div class="box"><img src="img1.png" alt="Dog 1" /></div>
+    <div class="box"><img src="img2.png" alt="Dog 2" /></div>
+    <div class="box"><img src="image11.png" alt="Dog 3" /></div>
+    <div class="box"><img src="img4.png" alt="Dog 4" /></div>
+    <div class="box"><img src="img5.png" alt="Dog 5" /></div>
+    <div class="box"><img src="img6.png" alt="Dog 6" /></div>
+    <div class="box"><img src="img7.png" alt="Dog 7" /></div>
+    <div class="box"><img src="image10.png" alt="Dog 8" /></div>
+    <div class="box"><img src="img9.png" alt="Dog 9" /></div>
+  </div>
+
 </body>
 </html>
