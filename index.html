@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
   <title>Web Development Activities - Somya Gupta</title>
   
   <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Caveat+Brush&display=swap" rel="stylesheet" />
@@ -49,6 +49,7 @@
       color: #2e3532;
       padding: 10px;
       user-select: none;
+      border-radius: 8px;
     }
 
     nav {
@@ -61,6 +62,7 @@
       justify-content: center;
       gap: 40px;
       padding: 15px 0;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -121,16 +123,12 @@
       user-select: none;
     }
 
-    .project-card p {
-      margin-bottom: 20px;
-      color: #A6B1E1;
-    }
-
     .project-card a {
       color: #EAF0CE;
       font-weight: bold;
       font-size: 28px;
       user-select: none;
+      text-decoration: none;
     }
 
     .project-card a:hover {
@@ -149,7 +147,7 @@
       user-select: none;
     }
 
-    /* Responsive */
+    /* Tablet screens */
     @media (max-width: 1024px) {
       body {
         font-size: 85px;
@@ -177,6 +175,7 @@
       }
     }
 
+    /* Small phones */
     @media (max-width: 600px) {
       body {
         font-size: 40px;
@@ -211,6 +210,66 @@
         padding: 10px 0;
       }
     }
+
+    /* Extra small phones (Galaxy S8+, iPhone 12 Pro Portrait) */
+    @media (max-width: 480px) {
+      body {
+        font-size: 22px;
+        padding: 0 5px;
+      }
+
+      .container {
+        border-width: 3px;
+        box-shadow: 0 0 8px 3px #94849B;
+      }
+
+      header h1 {
+        font-size: 26px;
+        padding: 4px;
+        line-height: 1.2;
+      }
+
+      main {
+        padding: 10px 8px;
+        border-width: 3px;
+      }
+
+      main h1 {
+        font-size: 26px;
+        margin-bottom: 10px;
+        line-height: 1.2;
+      }
+
+      .project-grid {
+        gap: 12px;
+      }
+
+      .project-card {
+        font-size: 14px;
+        padding: 8px;
+        border-radius: 10px;
+      }
+
+      .project-card h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        line-height: 1.2;
+      }
+
+      .project-card a {
+        font-size: 14px;
+        display: inline-block;
+      }
+
+      nav a {
+        font-size: 16px;
+      }
+
+      footer {
+        font-size: 14px;
+        padding: 6px 3px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -220,88 +279,106 @@
     <header>
       <h1>Web Development Activities</h1>
     </header>
-    <main>
 
+    <main>
       <div class="project-grid">
+
         <div class="project-card">
           <h2>My First Webpage</h2>
-       <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c1.html" target="_blank">GitHub</a> | <a href="c1.html" target="_blank">Demo</a>
+          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c1.html" target="_blank">GitHub</a> | 
+          <a href="c1.html" target="_blank">Demo</a>
         </div>
 
         <div class="project-card">
           <h2>Contact Form</h2>
-          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c2-form.html" target="_blank">GitHub</a> | <a href="c2-form.html" target="_blank">Demo</a>
+          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c2-form.html" target="_blank">GitHub</a> | 
+          <a href="c2-form.html" target="_blank">Demo</a>
         </div>
 
         <div class="project-card">
           <h2>Weekend Plan List</h2>
-          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c2-list.html" target="_blank">GitHub</a> | <a href="c2-list.html" target="_blank">Demo</a>
+          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c2-list.html" target="_blank">GitHub</a> | 
+          <a href="c2-list.html" target="_blank">Demo</a>
         </div>
 
         <div class="project-card">
           <h2>Movie Collection Table</h2>
-          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c2-table.html" target="_blank">GitHub</a> | <a href="c2-table.html" target="_blank">Demo</a>
+          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c2-table.html" target="_blank">GitHub</a> | 
+          <a href="c2-table.html" target="_blank">Demo</a>
         </div>
 
         <div class="project-card">
           <h2>Semantic Web Page</h2>
-          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c3-activity.html" target="_blank">GitHub</a> | <a href="c3-activity.html" target="_blank">Demo</a>
+          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c3-activity.html" target="_blank">GitHub</a> | 
+          <a href="c3-activity.html" target="_blank">Demo</a>
         </div>
 
         <div class="project-card">
           <h2>Recipe Page</h2>
-          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c4-recipe.html" target="_blank">GitHub</a> | <a href="c4-recipe.html" target="_blank">Demo</a>
+          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c4-recipe.html" target="_blank">GitHub</a> | 
+          <a href="c4-recipe.html" target="_blank">Demo</a>
         </div>
 
         <div class="project-card">
-          <h2>Shapes-Square</h2>
-          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c6-square.html" target="_blank">GitHub</a> | <a href="c6-square.html" target="_blank">Demo</a>
+          <h2>Shapes - Square</h2>
+          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c6-square.html" target="_blank">GitHub</a> | 
+          <a href="c6-square.html" target="_blank">Demo</a>
         </div>
 
         <div class="project-card">
-          <h2>Shapes-Rectangle</h2>
-          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c6%20rectangle.html" target="_blank">GitHub</a> | <a href="c6 rectangle.html" target="_blank">Demo</a>
+          <h2>Shapes - Rectangle</h2>
+          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c6%20rectangle.html" target="_blank">GitHub</a> | 
+          <a href="c6 rectangle.html" target="_blank">Demo</a>
         </div>
 
         <div class="project-card">
-          <h2>Shapes-Circle</h2>
-          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c6-circle.html" target="_blank">GitHub</a> | <a href="c6-circle.html" target="_blank">Demo</a>
+          <h2>Shapes - Circle</h2>
+          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c6-circle.html" target="_blank">GitHub</a> | 
+          <a href="c6-circle.html" target="_blank">Demo</a>
         </div>
 
         <div class="project-card">
-          <h2>Shapes-Triangle</h2>
-          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c6-triangle.html" target="_blank">GitHub</a> | <a href="c6-triangle.html" target="_blank">Demo</a>
+          <h2>Shapes - Triangle</h2>
+          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c6-triangle.html" target="_blank">GitHub</a> | 
+          <a href="c6-triangle.html" target="_blank">Demo</a>
         </div>
 
         <div class="project-card">
-          <h2>Shapes-Diamond</h2>
-          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c6-diamond.html" target="_blank">GitHub</a> | <a href="c6-diamond.html" target="_blank">Demo</a>
+          <h2>Shapes - Diamond</h2>
+          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c6-diamond.html" target="_blank">GitHub</a> | 
+          <a href="c6-diamond.html" target="_blank">Demo</a>
         </div>
 
         <div class="project-card">
           <h2>Profile Card</h2>
-          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c7-profilecard.html" target="_blank">GitHub</a> | <a href="c7-profilecard.html" target="_blank">Demo</a>
+          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/c7-profilecard.html" target="_blank">GitHub</a> | 
+          <a href="c7-profilecard.html" target="_blank">Demo</a>
         </div>
 
         <div class="project-card">
           <h2>Dog Gallery</h2>
-          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/dog_gallery.html" target="_blank">GitHub</a> | <a href="dog_gallery.html" target="_blank">Demo</a>
+          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/dog_gallery.html" target="_blank">GitHub</a> | 
+          <a href="dog_gallery.html" target="_blank">Demo</a>
         </div>
 
         <div class="project-card">
           <h2>Grid</h2>
-          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/grid.html" target="_blank">GitHub</a> | <a href="grid.html" target="_blank">Demo</a>
+          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/grid.html" target="_blank">GitHub</a> | 
+          <a href="grid.html" target="_blank">Demo</a>
         </div>
 
         <div class="project-card">
           <h2>Ferris Wheel</h2>
-          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/ferris_wheel.html" target="_blank">GitHub</a> | <a href="ferris_wheel.html" target="_blank">Demo</a>
+          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/ferris_wheel.html" target="_blank">GitHub</a> | 
+          <a href="ferris_wheel.html" target="_blank">Demo</a>
         </div>
 
         <div class="project-card">
           <h2>Moon Orbit</h2>
-          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/moon_earth.html" target="_blank">GitHub</a> | <a href="moon_earth.html" target="_blank">Demo</a>
+          <a href="https://github.com/Somya1503/WebDev-Activities/blob/main/moon_earth.html" target="_blank">GitHub</a> | 
+          <a href="moon_earth.html" target="_blank">Demo</a>
         </div>
+
       </div>
     </main>
 
@@ -313,4 +390,3 @@
 
 </body>
 </html>
-
